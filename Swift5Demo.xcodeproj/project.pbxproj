@@ -12,6 +12,7 @@
 		EF1739E32236482500021914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1739E12236482500021914 /* Main.storyboard */; };
 		EF1739E52236482700021914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1739E42236482700021914 /* Assets.xcassets */; };
 		EF1739E82236482700021914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1739E62236482700021914 /* LaunchScreen.storyboard */; };
+		EFDBAE2622365B3100EB445D /* SomeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBAE2522365B3100EB445D /* SomeObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		EF1739E42236482700021914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF1739E72236482700021914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF1739E92236482700021914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFDBAE2322365B3000EB445D /* Swift5Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift5Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFDBAE2422365B3100EB445D /* SomeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeObject.h; sourceTree = "<group>"; };
+		EFDBAE2522365B3100EB445D /* SomeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,11 @@
 			isa = PBXGroup;
 			children = (
 				EF1739DD2236482500021914 /* AppDelegate.swift */,
+				EFDBAE2422365B3100EB445D /* SomeObject.h */,
+				EFDBAE2522365B3100EB445D /* SomeObject.m */,
 				EF1739DF2236482500021914 /* ViewController.swift */,
 				EF1739E12236482500021914 /* Main.storyboard */,
+				EFDBAE2322365B3000EB445D /* Swift5Demo-Bridging-Header.h */,
 				EF1739E42236482700021914 /* Assets.xcassets */,
 				EF1739E62236482700021914 /* LaunchScreen.storyboard */,
 				EF1739E92236482700021914 /* Info.plist */,
@@ -96,6 +103,7 @@
 				TargetAttributes = {
 					EF1739D92236482500021914 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -137,6 +145,7 @@
 			files = (
 				EF1739E02236482500021914 /* ViewController.swift in Sources */,
 				EF1739DE2236482500021914 /* AppDelegate.swift in Sources */,
+				EFDBAE2622365B3100EB445D /* SomeObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,16 +291,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZG75EYX8UR;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Swift5Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Swift5Demo",
+				);
+				MODULEMAP_FILE = /Users/yangxuesi/Documents/Swift5Demo/Swift5Demo/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = mcfans.Swift5Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Swift5Demo\"/**";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yangxuesi/Documents/Swift5Demo/Swift5Demo/Swift5Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,16 +320,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZG75EYX8UR;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Swift5Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Swift5Demo",
+				);
+				MODULEMAP_FILE = /Users/yangxuesi/Documents/Swift5Demo/Swift5Demo/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = mcfans.Swift5Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Swift5Demo\"/**";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yangxuesi/Documents/Swift5Demo/Swift5Demo/Swift5Demo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

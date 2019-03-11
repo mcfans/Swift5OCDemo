@@ -8,10 +8,12 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        SomeObject.init("d", withChannelId: "d")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
