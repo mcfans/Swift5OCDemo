@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface SomeObject : NSObject
-+ (void)init:(nullable NSString *)appID withChannelId:(nullable NSString *)channelId;
++ (void)init:(NSString *)appID withChannelId:(NSString *)channelId;
 @end
-
-NS_ASSUME_NONNULL_END

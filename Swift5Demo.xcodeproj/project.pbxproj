@@ -309,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mcfans.Swift5Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Swift5Demo\"/**";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yangxuesi/Documents/Swift5Demo/Swift5Demo/Swift5Demo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift5Demo/Swift5Demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mcfans.Swift5Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Swift5Demo\"/**";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yangxuesi/Documents/Swift5Demo/Swift5Demo/Swift5Demo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift5Demo/Swift5Demo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

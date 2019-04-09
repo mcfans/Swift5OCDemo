@@ -8,7 +8,7 @@
 #import "SomeObject.h"
 
 @implementation SomeObject
-+ (void)init:(nullable NSString *)appID withChannelId:(nullable NSString *)channelId {
++ (void)init:(NSString *)appID withChannelId:(NSString *)channelId {
     [super init];
 }
 @end
